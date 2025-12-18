@@ -38,8 +38,8 @@ header:
       # Logo filename in `assets/media/` folder
       filename: "logo.svg"
     button:
-      enable: false
-      text: "Get Started"
+      enable: true
+      text: "Download"
       url: "https://hugoblox.com/templates/"
     show_search: true
     show_theme_chooser: true
