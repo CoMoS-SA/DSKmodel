@@ -17,8 +17,8 @@ sections:
       #     # icon: rocket-launch
       button:
         text: Publications
-        url: /publications/           # Big subtitle/text
-          # icon: rocket-launch
+        url: publications/           # Big subtitle/text
+        icon: rocket-launch
       # announcement:
       #   text: "Announcing the release of version 1."
       #   link:
