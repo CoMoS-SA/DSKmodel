@@ -1,7 +1,14 @@
 ---
 title: Publications
-view: citation
-sort_by: date
-sort_order: desc
-date_format: "January 2006"
+type: landing
+
+sections:
+  - block: collection
+    content:
+      page_type: publications
+      count: 100
+      order: desc
+    design:
+      view: card
+      columns: 1
 ---
