@@ -1,9 +1,9 @@
 ---
 title: "Faraway, So Close: Coupled Climate and Economic Dynamics in an Agent-based Integrated Assessment Model"
 date: 2018-08-01
-
-# summary: |
-#  Francesco Lamperti, Giovanni Dosi, Mauro Napoletano, Andrea Roventini, Alessandro Sapio  
+publication: Ecological Economics 
+ summary: |
+  Francesco Lamperti, Giovanni Dosi, Mauro Napoletano, Andrea Roventini, Alessandro Sapio  
 #  Ecological Economics (2018)
 
 #summary: |
@@ -17,9 +17,6 @@ _build:
   list: true
 ---
 
-# Francesco Lamperti, Giovanni Dosi, Mauro Napoletano, Andrea Roventini, Alessandro Sapio 
-# **Ecological Economics**
 
- Francesco Lamperti, Giovanni Dosi, Mauro Napoletano, Andrea Roventini, Alessandro Sapio<br>
- 
-<em>Ecological Economics (2018)</em>
+
+Ecological Economics
