@@ -6,3 +6,8 @@
 .custom-hero-text p {
   font-size: 1.5rem;  /* Equivalent to text-2xl */
 }
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
