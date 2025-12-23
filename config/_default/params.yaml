@@ -40,7 +40,7 @@ header:
     button:
       enable: true
       text: "Get Access"
-      url: "https://github.com/CoMoS-SA/Reissl_2025"
+      url: /access/
     show_search: true
     show_theme_chooser: true
 

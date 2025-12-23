@@ -13,7 +13,7 @@ sections:
       text:  Dystopian Schumpeter Meeting Keynes climate-economy agent-based model
       button:
         text: Get Access
-        url: https://github.com/CoMoS-SA/Reissl_2025
+        url: /access/
         icon: github
       button:
         text: Publications
