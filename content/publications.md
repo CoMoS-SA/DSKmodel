@@ -8,9 +8,7 @@ title: Publications
   display:flex;
   gap:1.5rem;
   margin:2rem 0;
-  align-items:flex-start;
-
-  /* optional separator */
+  align-items:center;   /* ← CHANGE THIS */
   border-bottom:1px solid #eee;
   padding-bottom:1.5rem;
 }
@@ -97,6 +95,7 @@ title: Publications
     </div>
   </div>
 </div>
+
 
 
 
