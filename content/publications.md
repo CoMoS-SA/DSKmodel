@@ -78,9 +78,6 @@ title: Publications
     <div class="pub-venue">
       Ecological Economics — August 2018
     </div>
-    <p>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921800917314623">Journal link</a>
-    </p>
   </div>
 </div>
 
@@ -98,11 +95,9 @@ title: Publications
     <div class="pub-venue">
       Nature Sustainability — November 2025
     </div>
-    <p>
-      <a href="https://www.nature.com/articles/s41893-025-01683-w">Journal link</a>
-    </p>
   </div>
 </div>
+
 
 
 
