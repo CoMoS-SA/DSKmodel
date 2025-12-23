@@ -76,7 +76,6 @@ title: Publications
     <div class="pub-venue">
       Ecological Economics — August 2018
     </div>
-        <p><a href="https://github.com/CoMoS-SA/Reissl_2025">Access Code</a></p>
   </div>
 </div>
 
@@ -94,9 +93,6 @@ title: Publications
     <div class="pub-venue">
       Nature Sustainability — November 2025
     </div>
-        <p>
-        <a href="https://github.com/CoMoS-SA/Reissl_2025">Access Code</a>
-        </p>
   </div>
 </div>
 
