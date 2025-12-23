@@ -4,7 +4,7 @@ title: Publications
 
 <div style="display:flex; gap:1.2rem; margin-bottom:2rem; align-items:flex-start;">
 
-<img src="/media/dsk2018.png" width="160" alt="Faraway So Close figure">
+<img src="media/dsk2018.png" width="160" alt="Faraway So Close figure">
 
 <div>
 
@@ -19,4 +19,5 @@ Francesco Lamperti, Giovanni Dosi, Mauro Napoletano, Andrea Roventini, Alessandr
 </div>
 
 ---
+
 
