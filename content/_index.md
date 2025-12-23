@@ -13,8 +13,8 @@ sections:
       text:  Dystopian Schumpeter Meeting Keynes climate-economy agent-based model
       button:
         text: Get Access
-        url: https://hugoblox.com/templates/
-      #     # icon: rocket-launch
+        url: https://github.com/CoMoS-SA/Reissl_2025
+        icon: github
       button:
         text: Publications
         url: publications/           # Big subtitle/text

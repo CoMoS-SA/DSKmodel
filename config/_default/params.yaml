@@ -15,7 +15,7 @@ marketing:
     local_business_type: ''
     org_name: ''
     description: 'DSK model website'
-    twitter: 'GetResearchDev'
+    twitter: 'DSKmodel'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -40,7 +40,7 @@ header:
     button:
       enable: true
       text: "Get Access"
-      url: "https://hugoblox.com/templates/"
+      url: "https://github.com/CoMoS-SA/Reissl_2025"
     show_search: true
     show_theme_chooser: true
 
