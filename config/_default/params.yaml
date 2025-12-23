@@ -39,7 +39,7 @@ header:
       filename: "logo.svg"
     button:
       enable: true
-      text: "Download"
+      text: "Get Access"
       url: "https://hugoblox.com/templates/"
     show_search: true
     show_theme_chooser: true
