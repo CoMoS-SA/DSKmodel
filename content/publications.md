@@ -61,18 +61,22 @@ title: Publications
   <img class="pub-img" src="/DSKmodel/media/dsk2025.png" alt="Decarbonization figure">
   <div>
     <div class="pub-title">
-      Decarbonization with economic growth and job creation
+      Policies for rapid decarbonization with steady economic transition and employment creation
+    </div>
+     <div class="pub-authors">
+      Claudia Wieners, Francesco Lamperti, Giovanni Dosi, Andrea Roventini
     </div>
     <div class="pub-venue">
       Nature Sustainability — November 2025
     </div>
     <p>
-      <a href="https://www.nature.com/articles/s41893-025-01679-6">
+      <a href="https://www.nature.com/articles/s41893-025-01683-w">
         Journal link
       </a>
     </p>
   </div>
 </div>
+
 
 
 
