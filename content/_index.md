@@ -15,9 +15,9 @@ sections:
         text: Get Access
         url: access/
         icon: github
-      button:
-        text: Publications
-        url: publications/           # Big subtitle/text
+      # button:
+      #  text: Publications
+      #  url: publications/           # Big subtitle/text
       #  icon: rocket-launch
       # announcement:
       #   text: "Announcing the release of version 1."

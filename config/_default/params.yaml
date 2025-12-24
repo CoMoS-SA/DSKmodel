@@ -40,7 +40,7 @@ header:
     button:
       enable: true
       text: "Get Access"
-      url: /access/
+      url: access/
     show_search: true
     show_theme_chooser: true
 
