@@ -1,20 +1,24 @@
 ---
-title: Access the Model
+title: GitHub Repositories
 ---
 
 <style>
 .repo-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:1.5rem;
+  grid-template-columns:repeat(auto-fit, minmax(420px, 1fr)); /* WIDER */
+  gap:1.8rem;
   margin-top:2rem;
 }
 
 .repo-card{
   border:1px solid #e5e7eb;
   border-radius:12px;
-  padding:1.5rem;
+  padding:1.8rem;
   background:#fff;
+  min-height:190px;                 /* FLAT rectangle */
+  display:flex;                     /* allow vertical control */
+  flex-direction:column;
+  justify-content:space-between;    /* button stays bottom */
   transition:transform .15s ease, box-shadow .15s ease;
 }
 
@@ -28,7 +32,7 @@ title: Access the Model
 }
 
 .repo-title{
-  font-size:1.2rem;
+  font-size:1.25rem;
   font-weight:700;
   margin-bottom:.4rem;
 }
@@ -40,8 +44,8 @@ title: Access the Model
 }
 
 .repo-btn{
-  display:inline-block;
-  padding:.5rem 1rem;
+  align-self:flex-start;
+  padding:.55rem 1.2rem;
   background:#1e40af;
   color:white;
   border-radius:6px;
@@ -51,18 +55,25 @@ title: Access the Model
 .repo-btn:hover{
   background:#1e3a8a;
 }
-</style>
 
-## GitHub repositories
+/* Mobile */
+@media (max-width: 640px){
+  .repo-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 
 Below you can find the **main DSK model** repository and related tools.
 
 <div class="repo-grid">
 
 <div class="repo-card repo-main">
-  <div class="repo-title">DSK Model (Main)</div>
-  <div class="repo-desc">
-    Core climate–economy agent-based model.
+  <div>
+    <div class="repo-title">DSK Model (Main)</div>
+    <div class="repo-desc">
+      Core climate–economy agent-based model.
+    </div>
   </div>
   <a class="repo-btn" href="https://github.com/CoMoS-SA/DSKmodel" target="_blank">
     View repository →
@@ -70,9 +81,13 @@ Below you can find the **main DSK model** repository and related tools.
 </div>
 
 <div class="repo-card">
-  <div class="repo-title">DSK model with household classes (Ravaioli et al., 2025) </div>
-  <div class="repo-desc">
-   Model version developed in the paper by Ravaioli et al., 2025
+  <div>
+    <div class="repo-title">
+      DSK model with household classes (Ravaioli et al., 2025)
+    </div>
+    <div class="repo-desc">
+      Model version developed in the paper by Ravaioli et al. (2025).
+    </div>
   </div>
   <a class="repo-btn" href="https://github.com/CoMoS-SA/DSKmodel" target="_blank">
     View repository →
@@ -80,9 +95,13 @@ Below you can find the **main DSK model** repository and related tools.
 </div>
 
 <div class="repo-card">
-  <div class="repo-title">DSK model with different policies </div>
-  <div class="repo-desc">
-   Model version developed in the paper by Wieners et al., 2025
+  <div>
+    <div class="repo-title">
+      DSK model with alternative policy scenarios
+    </div>
+    <div class="repo-desc">
+      Model version developed in the paper by Wieners et al. (2025).
+    </div>
   </div>
   <a class="repo-btn" href="https://github.com/CoMoS-SA/DSKmodel" target="_blank">
     View repository →
