@@ -3,15 +3,18 @@
 #   The `weight` parameter defines the order that the links will appear in.
 
 main:
+  - name: 
+    url: /
+    weight: 1
   - name: Home
     url: /#top
-    weight: 1
+    weight: 2
   #- name: Model
   #  url: /model/  
   #  weight: 30
   - name: Publications
     url: publications/
-    weight: 2
+    weight: 3
  # - name: Resources
  #   weight: 40
  #   hasChildren: true
