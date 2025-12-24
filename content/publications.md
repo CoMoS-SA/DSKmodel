@@ -80,6 +80,42 @@ title: Publications
 </div>
 
 <div class="pub-row">
+  <img class="pub-img" src="/DSKmodel/media/ravaioli2025.png" alt="Ravaioli et al figure">
+  <div>
+    <div class="pub-title">
+      <a href="https://www.sciencedirect.com/science/article/pii/S0167268125003075">
+        Tackling emissions and inequality: policy insights from an agent-based model
+      </a>
+    </div>
+    <div class="pub-authors">
+      Giacomo Ravaioli, Francesco Lamperti, Andrea Roventini, Tiago Domingos 
+    </div>
+    <div class="pub-venue">
+      Journal of Economic Behavior & Organization — September 2025
+    </div>
+  </div>
+</div>
+
+<div class="pub-row">
+  <img class="pub-img" src="/DSKmodel/media/reissl2025.png" alt="Reissl et al figure">
+  <div>
+    <div class="pub-title">
+      <a href="https://www.sciencedirect.com/science/article/pii/S0921800925001247">
+        The DSK stock-flow consistent agent-based integrated assessment model
+      </a>
+    </div>
+    <div class="pub-authors">
+      Severin Reissl, Luca E. Fierro, Francesco Lamperti, Andrea Roventini 
+    </div>
+    <div class="pub-venue">
+      Ecological Economics — October 2025
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pub-row">
   <img class="pub-img" src="/DSKmodel/media/dsk2025.png" alt="Decarbonization figure">
   <div>
     <div class="pub-title">
