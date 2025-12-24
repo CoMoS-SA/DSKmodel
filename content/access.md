@@ -72,10 +72,10 @@ Below you can find the **main DSK model** repository and related tools.
   <div>
     <div class="repo-title">DSK Model (Main)</div>
     <div class="repo-desc">
-      Core climate–economy agent-based model.
+      This repository allows access to the main DSK model as orginally developed by Lamperti et al. (2018) and with the lates integrations for stock flow consistency developed by Reissl et al. (2025). 
     </div>
   </div>
-  <a class="repo-btn" href="https://github.com/CoMoS-SA/DSKmodel" target="_blank">
+  <a class="repo-btn" href="https://github.com/CoMoS-SA/Reissl_2025" target="_blank">
     View repository →
   </a>
 </div>
@@ -83,13 +83,13 @@ Below you can find the **main DSK model** repository and related tools.
 <div class="repo-card">
   <div>
     <div class="repo-title">
-      DSK model with household classes (Ravaioli et al., 2025)
+      Model version used in the paper by Ravaioli et al. (2025). 
     </div>
     <div class="repo-desc">
-      Model version developed in the paper by Ravaioli et al. (2025).
+      The model combines an income class-based analysis of inequality with an improved accounting of emissions. 
     </div>
   </div>
-  <a class="repo-btn" href="https://github.com/CoMoS-SA/DSKmodel" target="_blank">
+  <a class="repo-btn" href="https://github.com/CoMoS-SA/Reissl_2025" target="_blank">
     View repository →
   </a>
 </div>
@@ -97,13 +97,13 @@ Below you can find the **main DSK model** repository and related tools.
 <div class="repo-card">
   <div>
     <div class="repo-title">
-      DSK model with alternative policy scenarios
+      Model version used in the paper by Wieners et al. (2025). 
     </div>
     <div class="repo-desc">
-      Model version developed in the paper by Wieners et al. (2025).
+      The model includes a range of policy tools, such green industrial policies, subsidies and carbon pricing.  
     </div>
   </div>
-  <a class="repo-btn" href="https://github.com/CoMoS-SA/DSKmodel" target="_blank">
+  <a class="repo-btn" href="https://github.com/CoMoS-SA/Reissl_2025" target="_blank">
     View repository →
   </a>
 </div>
