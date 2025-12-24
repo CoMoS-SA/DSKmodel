@@ -15,9 +15,9 @@ main:
   - name: Publications
     url: publications/
     weight: 3
- # - name: Resources
- #   weight: 40
- #   hasChildren: true
+  - name: Get Access
+    url: access/  
+    weight: 4
  # - parent: Resources
  #   name: Blog
  #   url: blog/
