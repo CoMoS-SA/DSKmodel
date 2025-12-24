@@ -5,13 +5,13 @@
 main:
   - name: Home
     url: /#top
-    weight: 50
+    weight: 1
   #- name: Model
   #  url: /model/  
   #  weight: 30
   - name: Publications
     url: publications/
-    weight: 50
+    weight: 1
  # - name: Resources
  #   weight: 40
  #   hasChildren: true
