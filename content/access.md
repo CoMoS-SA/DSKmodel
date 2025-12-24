@@ -64,7 +64,7 @@ title: GitHub Repositories
 }
 </style>
 
-Below you can find the **main DSK model** repository and related tools.
+Below you can find the main **DSK model** repositories.
 
 <div class="repo-grid">
 
