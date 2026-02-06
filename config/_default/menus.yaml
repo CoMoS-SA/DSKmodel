@@ -12,6 +12,9 @@ main:
   #- name: Model
   #  url: /model/  
   #  weight: 30
+  - name: The Model
+    url: model/
+    weight: 3
   - name: Publications
     url: publications/
     weight: 3
