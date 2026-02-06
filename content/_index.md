@@ -53,7 +53,9 @@ sections:
           description: "The model is open-source and can be freely used and modified. The source code can be browsed and downloaded from our Github repository. "
     design:
       # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
+      #css_class: "bg-gray-100 dark:bg-gray-900"
+      css_class: "bg-gray-100 dark:bg-gray-900 features-centered"
+
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
