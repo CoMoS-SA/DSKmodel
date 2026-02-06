@@ -10,7 +10,7 @@ appearance:
 
 page:
   show_navigation: false
-  
+
 # SEO
 marketing:
   seo:
@@ -65,4 +65,4 @@ search:
 
 # Custom CSS
 custom_css:
-  - css/text_custom.css
+  - media/css/text_custom.css
