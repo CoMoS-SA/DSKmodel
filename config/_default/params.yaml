@@ -8,6 +8,9 @@ appearance:
   mode: light
   color: indigo
 
+page:
+  show_navigation: false
+  
 # SEO
 marketing:
   seo:
