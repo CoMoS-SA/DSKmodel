@@ -36,7 +36,7 @@ sections:
         color: "navy"
         image:
           # Add your image background to `assets/media/`.
-          filename: liana_copia.png #png or svg
+          filename: liana_copia.jpg #png or svg
           filters:
            brightness: 1 #reintranza necessaria 
           # style: "background-size: cover; background-position: center top;"
