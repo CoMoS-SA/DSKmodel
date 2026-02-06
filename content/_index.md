@@ -36,7 +36,7 @@ sections:
         color: "navy"
         image:
           # Add your image background to `assets/media/`.
-          filename: sfondo_blu_copia.png #png or svg
+          filename: sfondo_blu_copia2.png #png or svg
           filters:
            brightness: 1 #reintranza necessaria 
           # style: "background-size: cover; background-position: center top;"
