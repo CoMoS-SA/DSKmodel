@@ -10,4 +10,4 @@ The model allows studying the intricate relationship between climate physical an
 
 The model belongs to the “Schumpeter meeting Keynes” family of models developed at the Institute of Economics of the Scuola Superiore Sant’Anna (Pisa, Italy).
 
-![Schematic of the DSK model](../../assets/media/Gemini_Generated_Image_oc7nwioc7nwioc7n.png)
+![Schematic of the DSK model](../assets/media/Gemini_Generated_Image_oc7nwioc7nwioc7n.png)
