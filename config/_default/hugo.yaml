@@ -36,12 +36,23 @@ cascade:
     reading_time: false
     hide_date: true
     show_related: false
-  # Blog section options
+    show_breadcrumb: false
+    share: false
+    show_date_updated: false
   - _target:
-      path: /blog/*
       kind: section
-    # Set the listing view
-    view: date-title-summary
+    reading_time: false
+    hide_date: true
+    show_related: false
+    show_breadcrumb: false
+    share: false
+    show_date_updated: false
+  # # Blog section options
+  # - _target:
+  #     path: /blog/*
+  #     kind: section
+  #   # Set the listing view
+  #   view: date-title-summary
 
 ############################
 ## LANGUAGE
