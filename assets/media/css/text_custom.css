@@ -41,16 +41,26 @@
   grid-column: 1 !important;
 }
 
-/* Center feature titles */
+
+/* Justify text in regular pages like /model/ */
+.article-style {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Center titles in features block */
 .features-centered .feature-item h3 {
   text-align: center;
 }
 
-/* Center feature descriptions */
-.features-centered .feature-item p {
+/* Center description text */
+.features-centered .feature-item {
   text-align: center;
+}
+
+/* Optional: limit width so centered text looks clean */
+.features-centered .feature-item {
   max-width: 45ch;
   margin-left: auto;
   margin-right: auto;
 }
-
