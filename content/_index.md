@@ -36,7 +36,7 @@ sections:
         color: "navy"
         image:
           # Add your image background to `assets/media/`.
-          filename: liana_copia.jpg #png or svg
+          filename: sfondo_blu_copia2.png #png or svg
           filters:
            brightness: 1 #reintranza necessaria 
           # style: "background-size: cover; background-position: center top;"
@@ -55,7 +55,6 @@ sections:
       # Section background color (CSS class)
       #css_class: "bg-gray-100 dark:bg-gray-900"
       css_class: "bg-gray-100 dark:bg-gray-900 features-centered"
-
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
