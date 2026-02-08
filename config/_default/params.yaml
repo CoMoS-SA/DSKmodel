@@ -11,6 +11,8 @@ appearance:
 page:
   show_navigation: false
 
+reading_time: false
+
 # SEO
 marketing:
   seo:
@@ -57,12 +59,10 @@ locale:
   date_format: 'Jan 2006'
   time_format: '3:04 PM'
 
-reading_time: false
-
 # Enable search
 search:
   provider: pagefind
 
 # Custom CSS
 custom_css:
-  - media/css/text_custom.css
+  - css/text_custom.css
