@@ -80,7 +80,7 @@ title: Publications
 </div>
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/dsk2019.png" alt="Faraway So Close figure">
+  <img class="pub-img" src="/DSKmodel/media/dsk2019.png" alt="NCC figure">
   <div>
     <div class="pub-title">
       <a href="https://www.nature.com/articles/s41558-019-0607-5">
@@ -96,6 +96,23 @@ title: Publications
   </div>
 </div>
 
+
+<div class="pub-row">
+  <img class="pub-img" src="/DSKmodel/media/dsk2021.png" alt="JFS figure">
+  <div>
+    <div class="pub-title">
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1572308921000358">
+        Three green financial policies to address climate risks
+      </a>
+    </div>
+    <div class="pub-authors">
+      Francesco Lamperti, Valentina Bosetti, Andrea Roventini, Massimo Tavoni, Tania Treibich
+    </div>
+    <div class="pub-venue">
+      Journal of Financial Stability — June 2021
+    </div>
+  </div>
+</div>
 
 <div class="pub-row">
   <img class="pub-img" src="/DSKmodel/media/ravaioli2025.png" alt="Ravaioli et al figure">
