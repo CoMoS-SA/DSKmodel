@@ -80,6 +80,24 @@ title: Publications
 </div>
 
 <div class="pub-row">
+  <img class="pub-img" src="/DSKmodel/media/dsk2019.png" alt="Faraway So Close figure">
+  <div>
+    <div class="pub-title">
+      <a href="https://www.nature.com/articles/s41558-019-0607-5">
+        The public costs of climate-induced financial instability
+      </a>
+    </div>
+    <div class="pub-authors">
+      Francesco Lamperti, Valentina Bosetti, Andrea Roventini, Massimo Tavoni
+    </div>
+    <div class="pub-venue">
+      Nature Climate Change — October 2019
+    </div>
+  </div>
+</div>
+
+
+<div class="pub-row">
   <img class="pub-img" src="/DSKmodel/media/ravaioli2025.png" alt="Ravaioli et al figure">
   <div>
     <div class="pub-title">
