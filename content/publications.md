@@ -98,7 +98,7 @@ title: Publications
 
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/dsk2021.png" alt="JFS figure">
+  <img class="pub-img" src="/DSKmodel/media/dsk2021_v2.png" alt="JFS figure">
   <div>
     <div class="pub-title">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S1572308921000358">
