@@ -79,33 +79,3 @@ Below you can find the main **DSK model** repositories.
     View repository →
   </a>
 </div>
-
-<div class="repo-card">
-  <div>
-    <div class="repo-title">
-      Model version used in the paper by Ravaioli et al. (2025). 
-    </div>
-    <div class="repo-desc">
-      The model combines an income class-based analysis of inequality with an improved accounting of emissions. 
-    </div>
-  </div>
-  <a class="repo-btn" href="https://github.com/CoMoS-SA/Reissl_2025" target="_blank">
-    View repository →
-  </a>
-</div>
-
-<div class="repo-card">
-  <div>
-    <div class="repo-title">
-      Model version used in the paper by Wieners et al. (2025). 
-    </div>
-    <div class="repo-desc">
-      The model includes a range of policy tools, such green industrial policies, subsidies and carbon pricing.  
-    </div>
-  </div>
-  <a class="repo-btn" href="https://github.com/CoMoS-SA/Reissl_2025" target="_blank">
-    View repository →
-  </a>
-</div>
-
-</div>
