@@ -1,79 +1,47 @@
 .custom-hero-text h1 {
-  font-size: 4rem;    /* Equivalent to text-6xl */
-  font-weight: 800;   /* Bold */
+  font-size: 4rem;
+  font-weight: 800;
 }
-
 .custom-hero-text p {
-  font-size: 1.5rem;  /* Equivalent to text-2xl */
+  font-size: 1.5rem;
 }
-
-/* .navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 /* Force true center alignment for menu items in Hugoblox navbar */
 .hb-navbar .navbar-container,
 .hb-navbar .navbar {
   display: grid !important;
-  grid-template-columns: 1fr auto 1fr !important; /* left | center | right */
+  grid-template-columns: 1fr auto 1fr !important;
   align-items: center;
 }
-
-/* Put the menu in the center column and center it */
 .hb-navbar .navbar-nav {
   grid-column: 2 !important;
   justify-content: center !important;
   margin: 0 auto !important;
 }
-
-/* Keep the right-side controls (search/theme/button) on the right */
 .hb-navbar .navbar-actions,
 .hb-navbar .navbar-buttons,
 .hb-navbar .navbar-right {
   grid-column: 3 !important;
   justify-content: end !important;
 }
-
-/* Keep logo/brand on the left */
 .hb-navbar .navbar-brand,
 .hb-navbar .navbar-left {
   grid-column: 1 !important;
 }
 
-
-/* Justify text in regular pages like /model/ */
-.article-style {
-  text-align: justify;
-  hyphens: auto;
-}
-
-/* Center titles in features block */
-.features-centered .feature-item h3 {
-  text-align: center;
-}
-
-/* Center description text */
+/* Center titles/text in features block */
+.features-centered .feature-item h3,
 .features-centered .feature-item {
   text-align: center;
-}
-
-/* Optional: limit width so centered text looks clean */
-.features-centered .feature-item {
   max-width: 45ch;
   margin-left: auto;
   margin-right: auto;
 }
 
-.justify-text, .justify-text p {
+/* Justify all body text */
+main p, section p,
+.article-style, .article-style p,
+.prose, .prose p {
   text-align: justify !important;
-  hyphens: auto;
-}
-
-.page-body,
-.page-body p,
-.prose,
-.prose p {
-  text-align: justify;
   hyphens: auto;
 }
