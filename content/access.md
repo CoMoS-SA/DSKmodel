@@ -92,7 +92,6 @@ Below you can find the main **DSK model** repositories.
     View repository →
   </a>
 </div>
-</div><img width="1172" height="868" alt="image" src="https://github.com/user-attachments/assets/08138dad-e760-4a74-8c7f-8d39f782cb98" />
 
 
 
