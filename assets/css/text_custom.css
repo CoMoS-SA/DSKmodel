@@ -65,8 +65,9 @@
   margin-right: auto;
 }
 
-.justify-text {
-  text-align: justify;
+.justify-text, .justify-text p {
+  text-align: justify !important;
+  hyphens: auto;
 }
 
 .page-body,
