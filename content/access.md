@@ -79,3 +79,20 @@ Below you can find the main **DSK model** repositories.
     View repository →
   </a>
 </div>
+<div class="repo-card">
+  <div>
+    <div class="repo-title">
+      Model version used in the paper by Wieners et al. (2025). 
+    </div>
+    <div class="repo-desc">
+      The model includes a range of policy tools, such green industrial policies, subsidies and carbon pricing.  
+    </div>
+  </div>
+  <a class="repo-btn" href="https://github.com/CoMoS-SA/Wieners_2025" target="_blank">
+    View repository →
+  </a>
+</div>
+</div><img width="1172" height="868" alt="image" src="https://github.com/user-attachments/assets/08138dad-e760-4a74-8c7f-8d39f782cb98" />
+
+
+
