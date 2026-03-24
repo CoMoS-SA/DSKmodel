@@ -1,5 +1,6 @@
 ---
 title: The Model
+markup: html
 ---
 
 <div class="justify-text">
