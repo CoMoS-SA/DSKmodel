@@ -3,15 +3,14 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
+# SITE SETUP
+reading_time: false
+pager: false
+
 # Appearance
 appearance:
   mode: light
   color: indigo
-
-page:
-  show_navigation: false
-
-reading_time: false
 
 # SEO
 marketing:
