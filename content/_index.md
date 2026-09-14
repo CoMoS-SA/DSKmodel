@@ -49,7 +49,7 @@ sections:
           icon: logo.png
           description: "The DSK model is an agent based integrated assessment model for climate impacts and the study of a wide range of climate fiscal and monetary policies. The model belongs to the “Schumpeter meeting Keynes” family of models developed at the Institute of Economics of the Scuola Superiore Sant’Anna (Pisa, Italy)."
         - name: "ABM-IAM"
-          icon: cpu-chip
+          icon: share
           description:  " The model allows studying the intricate relationship between climate physical and transition risks as well as their macroeconomic effects."
         - name: "Open Source"
           icon: brands/github
