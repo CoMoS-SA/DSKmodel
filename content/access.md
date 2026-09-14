@@ -63,6 +63,21 @@ pager: false
     grid-template-columns:1fr;
   }
 }
+
+/* Dark mode */
+html.dark .repo-card{
+  background:#1f2027;
+  border-color:#3f3f46;
+}
+html.dark .repo-card:hover{
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+html.dark .repo-main{
+  border-color:#818cf8;
+}
+html.dark .repo-desc{
+  color:#a1a1aa;
+}
 </style>
 
 Below you can find the main **DSK model** repositories.

@@ -61,6 +61,14 @@ pager: false
     max-width:360px;
   }
 }
+
+/* Dark mode */
+html.dark .pub-row{
+  border-bottom-color:#3f3f46;
+}
+html.dark .pub-venue{
+  color:#a1a1aa;
+}
 </style>
 
 <div class="pub-row">

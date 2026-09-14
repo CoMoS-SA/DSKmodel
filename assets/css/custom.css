@@ -29,15 +29,6 @@
   grid-column: 1 !important;
 }
 
-/* Center titles/text in features block */
-.features-centered .feature-item h3,
-.features-centered .feature-item {
-  text-align: center;
-  max-width: 45ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Primary CTA button (e.g. hero "Get Access") — uses the site's indigo accent */
 .cta-btn-primary {
   background-color: #4F46E5;
