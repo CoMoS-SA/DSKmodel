@@ -7,7 +7,8 @@ full_width: true
 <style>
 .repo-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(420px, 1fr)); /* WIDER */
+  grid-template-columns:1fr;
+  max-width:700px;
   gap:1.8rem;
   margin-top:2rem;
 }
