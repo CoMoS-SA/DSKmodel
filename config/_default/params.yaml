@@ -37,10 +37,10 @@ header:
     blox: "navbar"
     layout: "centered"
     fixed_to_top: true
-    #logo:
-    #  text: ""
-    #  # Logo filename in `assets/media/` folder
-    #  filename: "logo.svg"
+    logo:
+      text: "DSK"
+      # Logo filename in `assets/media/` folder
+      filename: "logo.png"
     button:
       enable: false
       text: "Get Access"
