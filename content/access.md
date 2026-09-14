@@ -1,5 +1,6 @@
 ---
 title: GitHub Repositories
+pager: false
 ---
 
 <style>

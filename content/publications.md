@@ -1,5 +1,6 @@
 ---
 title: Publications
+pager: false
 ---
 
 <style>
