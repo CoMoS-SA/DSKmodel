@@ -51,7 +51,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: ''
 
 # Localization
 locale:
