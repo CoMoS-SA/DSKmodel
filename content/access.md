@@ -15,6 +15,8 @@ full_width: true
   max-width:700px;
   gap:1.8rem;
   margin-top:2rem;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .repo-card{
