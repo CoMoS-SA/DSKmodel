@@ -61,7 +61,3 @@ locale:
 # Enable search
 search:
   provider: pagefind
-
-# Custom CSS
-custom_css:
-  - css/text_custom.css
