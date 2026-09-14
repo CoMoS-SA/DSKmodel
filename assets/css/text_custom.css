@@ -41,7 +41,8 @@
 /* Justify all body text */
 main p, section p,
 .article-style, .article-style p,
-.prose, .prose p {
+.prose, .prose p,
+.justify-text {
   text-align: justify !important;
   hyphens: auto;
 }
