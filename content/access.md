@@ -5,6 +5,10 @@ full_width: true
 ---
 
 <style>
+.prose > p:first-of-type{
+  text-align:center !important;
+}
+
 .repo-grid{
   display:grid;
   grid-template-columns:1fr;
