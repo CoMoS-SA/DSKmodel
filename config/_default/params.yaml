@@ -38,7 +38,7 @@ header:
     layout: "centered"
     fixed_to_top: true
     logo:
-      text: "DSK"
+      text: ""
       # Logo filename in `assets/media/` folder
       filename: "logo.png"
     button:
