@@ -17,7 +17,7 @@ Indeed, the modelling philosophy merges a complex system approach, bounded ratio
 </p>
 
 <p class="justify-text">
-The model allows studying the intricate relationship between climate physical and transition risks as well as their macroeconomic effects. Further, it envisages a government and a central that run fiscal and monetary/macro-prudential policy, respectively.
+The model allows studying the intricate relationship between climate physical and transition risks as well as their macroeconomic effects. Further, it envisages a government and a central bank that run fiscal and monetary/macro-prudential policy, respectively.
 </p>
 
 <p class="justify-text">

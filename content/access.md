@@ -29,7 +29,7 @@ pager: false
 }
 
 .repo-main{
-  border:2px solid #1e40af;
+  border:2px solid #4338CA;
 }
 
 .repo-title{
@@ -47,14 +47,14 @@ pager: false
 .repo-btn{
   align-self:flex-start;
   padding:.55rem 1.2rem;
-  background:#1e40af;
+  background:#4F46E5;
   color:white;
   border-radius:6px;
   text-decoration:none;
   font-weight:600;
 }
 .repo-btn:hover{
-  background:#1e3a8a;
+  background:#4338CA;
 }
 
 /* Mobile */
@@ -73,7 +73,7 @@ Below you can find the main **DSK model** repositories.
   <div>
     <div class="repo-title">DSK Model (Main)</div>
     <div class="repo-desc">
-      This repository allows access to the main DSK model as orginally developed by Lamperti et al. (2018) and with the lates integrations for stock flow consistency developed by Reissl et al. (2025). 
+      This repository allows access to the main DSK model as originally developed by Lamperti et al. (2018) and with the latest integrations for stock flow consistency developed by Reissl et al. (2025). 
     </div>
   </div>
   <a class="repo-btn" href="https://github.com/CoMoS-SA/Reissl_2025" target="_blank">
@@ -86,7 +86,7 @@ Below you can find the main **DSK model** repositories.
       Model version used in the paper by Wieners et al. (2025). 
     </div>
     <div class="repo-desc">
-      The model includes a range of policy tools, such green industrial policies, subsidies and carbon pricing.  
+      The model includes a range of policy tools, such as green industrial policies, subsidies and carbon pricing.  
     </div>
   </div>
   <a class="repo-btn" href="https://github.com/CoMoS-SA/Wieners_2025" target="_blank">
