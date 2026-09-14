@@ -1,6 +1,7 @@
 ---
 title: GitHub Repositories
 pager: false
+full_width: true
 ---
 
 <style>

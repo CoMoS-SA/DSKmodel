@@ -1,6 +1,7 @@
 ---
 title: Publications
 pager: false
+full_width: true
 ---
 
 <style>
