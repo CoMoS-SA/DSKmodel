@@ -31,12 +31,12 @@
 
 /* Primary CTA button (e.g. hero "Get Access") — uses the site's indigo accent */
 .cta-btn-primary {
-  background-color: #4F46E5;
+  background-color: #4338CA;
   color: #ffffff;
   font-weight: 600;
 }
 .cta-btn-primary:hover {
-  background-color: #4338CA;
+  background-color: #3730A3;
 }
 
 /* Justify all body text */
