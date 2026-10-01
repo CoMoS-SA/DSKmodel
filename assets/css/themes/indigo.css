@@ -1,0 +1,14 @@
+/* Hugo Blox color theme: INDIGO (customized to a navy blue matching the hero cover image) */
+:root {
+  --color-primary-50: 245 246 250;
+  --color-primary-100: 233 236 247;
+  --color-primary-200: 204 211 240;
+  --color-primary-300: 160 175 233;
+  --color-primary-400: 105 129 226;
+  --color-primary-500: 49 83 221;
+  --color-primary-600: 28 60 186;
+  --color-primary-700: 20 46 148;
+  --color-primary-800: 17 37 115;
+  --color-primary-900: 15 30 87;
+  --color-primary-950: 11 19 50;
+}

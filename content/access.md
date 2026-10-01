@@ -37,7 +37,7 @@ full_width: true
 }
 
 .repo-main{
-  border:2px solid #4338CA;
+  border:2px solid #142E94;
 }
 
 .repo-title{
@@ -55,14 +55,14 @@ full_width: true
 .repo-btn{
   align-self:flex-start;
   padding:.55rem 1.2rem;
-  background:#4F46E5;
+  background:#1C3CBA;
   color:white;
   border-radius:6px;
   text-decoration:none;
   font-weight:600;
 }
 .repo-btn:hover{
-  background:#4338CA;
+  background:#142E94;
 }
 
 /* Mobile */
@@ -81,7 +81,7 @@ html.dark .repo-card:hover{
   box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
 html.dark .repo-main{
-  border-color:#818cf8;
+  border-color:#6981E2;
 }
 html.dark .repo-desc{
   color:#a1a1aa;

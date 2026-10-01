@@ -31,12 +31,23 @@
 
 /* Primary CTA button (e.g. hero "Get Access") — uses the site's indigo accent */
 .cta-btn-primary {
-  background-color: #4338CA;
+  background-color: #142E94;
   color: #ffffff;
   font-weight: 600;
 }
 .cta-btn-primary:hover {
-  background-color: #3730A3;
+  background-color: #112573;
+}
+
+/* Light grey page background instead of flat white, like the section below the home hero */
+body {
+  background-color: #F3F4F6;
+}
+
+/* Keep short UI text (e.g. hero subtitle) centered instead of justified */
+.prose.text-lg,
+.prose.text-lg p {
+  text-align: center !important;
 }
 
 /* Justify all body text */

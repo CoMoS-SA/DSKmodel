@@ -9,18 +9,35 @@ full_width: true
 .pub-row{
   display:flex;
   gap:1.5rem;
-  margin:2rem 0;
-  align-items:center;   /* ← CHANGE THIS */
-  border-bottom:1px solid #eee;
-  padding-bottom:1.5rem;
+  margin:1.5rem 0;
+  align-items:center;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:1.5rem;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.pub-row:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-/* Figure */
-.pub-img{
-  width:240px;        /* figure size */
-  max-width:40vw;
-  height:auto;
+/* Figure: fixed box so screenshots of different sizes line up neatly */
+.pub-img-wrap{
+  width:200px;
+  height:150px;
+  flex-shrink:0;
   border-radius:8px;
+  overflow:hidden;
+  border:1px solid #e5e7eb;
+  background:#f8f9fa;
+}
+.pub-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top;
+  display:block;
 }
 
 /* Text hierarchy */
@@ -56,16 +73,25 @@ full_width: true
 @media (max-width: 700px){
   .pub-row{
     flex-direction:column;
+    align-items:stretch;
   }
-  .pub-img{
+  .pub-img-wrap{
     width:100%;
-    max-width:360px;
+    height:180px;
   }
 }
 
 /* Dark mode */
 html.dark .pub-row{
-  border-bottom-color:#3f3f46;
+  background:#1f2027;
+  border-color:#3f3f46;
+}
+html.dark .pub-row:hover{
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+html.dark .pub-img-wrap{
+  border-color:#3f3f46;
+  background:#17181c;
 }
 html.dark .pub-venue{
   color:#a1a1aa;
@@ -73,7 +99,7 @@ html.dark .pub-venue{
 </style>
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/dsk2018.png" alt="Faraway So Close figure">
+  <div class="pub-img-wrap"><img class="pub-img" src="/DSKmodel/media/dsk2018.png" alt="Faraway So Close figure"></div>
   <div>
     <div class="pub-title">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921800917314623">
@@ -90,7 +116,7 @@ html.dark .pub-venue{
 </div>
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/dsk2019.png" alt="NCC figure">
+  <div class="pub-img-wrap"><img class="pub-img" src="/DSKmodel/media/dsk2019.png" alt="NCC figure"></div>
   <div>
     <div class="pub-title">
       <a href="https://www.nature.com/articles/s41558-019-0607-5">
@@ -108,7 +134,7 @@ html.dark .pub-venue{
 
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/dsk2021_v2.png" alt="JFS figure">
+  <div class="pub-img-wrap"><img class="pub-img" src="/DSKmodel/media/dsk2021_v2.png" alt="JFS figure"></div>
   <div>
     <div class="pub-title">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S1572308921000358">
@@ -125,7 +151,7 @@ html.dark .pub-venue{
 </div>
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/ravaioli2025.png" alt="Ravaioli et al figure">
+  <div class="pub-img-wrap"><img class="pub-img" src="/DSKmodel/media/ravaioli2025.png" alt="Ravaioli et al figure"></div>
   <div>
     <div class="pub-title">
       <a href="https://www.sciencedirect.com/science/article/pii/S0167268125003075">
@@ -142,7 +168,7 @@ html.dark .pub-venue{
 </div>
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/reissl2025.png" alt="Reissl et al figure">
+  <div class="pub-img-wrap"><img class="pub-img" src="/DSKmodel/media/reissl2025.png" alt="Reissl et al figure"></div>
   <div>
     <div class="pub-title">
       <a href="https://www.sciencedirect.com/science/article/pii/S0921800925001247">
@@ -161,7 +187,7 @@ html.dark .pub-venue{
 
 
 <div class="pub-row">
-  <img class="pub-img" src="/DSKmodel/media/dsk2025.png" alt="Decarbonization figure">
+  <div class="pub-img-wrap"><img class="pub-img" src="/DSKmodel/media/dsk2025.png" alt="Decarbonization figure"></div>
   <div>
     <div class="pub-title">
       <a href="https://www.nature.com/articles/s41893-025-01683-w">
