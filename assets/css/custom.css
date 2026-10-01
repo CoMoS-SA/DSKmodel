@@ -29,14 +29,14 @@
   grid-column: 1 !important;
 }
 
-/* Primary CTA button (e.g. hero "Get Access") — uses the site's indigo accent */
+/* Primary CTA button (e.g. hero "Get Access") — warm accent, complementary to the navy palette */
 .cta-btn-primary {
-  background-color: #142E94;
+  background-color: #E8833D;
   color: #ffffff;
   font-weight: 600;
 }
 .cta-btn-primary:hover {
-  background-color: #112573;
+  background-color: #CF6319;
 }
 
 /* Light grey page background instead of flat white, like the section below the home hero */
