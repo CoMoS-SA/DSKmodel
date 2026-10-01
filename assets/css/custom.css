@@ -31,12 +31,12 @@
 
 /* Primary CTA button (e.g. hero "Get Access") — warm accent, complementary to the navy palette */
 .cta-btn-primary {
-  background-color: #E8833D;
+  background-color: #D45911;
   color: #ffffff;
   font-weight: 600;
 }
 .cta-btn-primary:hover {
-  background-color: #CF6319;
+  background-color: #AA470E;
 }
 
 /* Light grey page background instead of flat white, like the section below the home hero */
