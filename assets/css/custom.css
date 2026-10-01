@@ -39,6 +39,13 @@
   background-color: #AA470E;
 }
 
+/* Echo the warm CTA accent in small recurring navbar details */
+#search_toggle:hover,
+.theme-toggle-wrap:hover,
+.nav-link:hover {
+  color: #D45911 !important;
+}
+
 /* Light grey page background instead of flat white, like the section below the home hero */
 body {
   background-color: #F3F4F6;
