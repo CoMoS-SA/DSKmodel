@@ -28,19 +28,9 @@
       </div>
       {{ end }}
 
-      {{ if .Params.full_width }}
-        {{ $hero_bg := resources.Get "media/liana_copia_blu.jpg" }}
-        <div class="page-title-band rounded-lg mt-2 flex items-center justify-center"
-             {{ with $hero_bg }}style="background-image:url('{{ .Permalink }}'); background-size:cover; background-position:center;"{{ end }}>
-          <h1 class="text-4xl font-bold tracking-tight text-white text-center py-10 px-6">
-            {{- .Title -}}
-          </h1>
-        </div>
-      {{ else }}
-        <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
-          {{- .Title -}}
-        </h1>
-      {{ end }}
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 {{ if .Params.full_width }}text-center{{ end }}">
+        {{- .Title -}}
+      </h1>
 
       <div class="mt-4 mb-16">
       <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2">

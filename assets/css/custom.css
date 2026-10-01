@@ -39,12 +39,6 @@
   background-color: #AA470E;
 }
 
-/* Page title band on full-width pages — echoes the home hero's background */
-.page-title-band {
-  min-height: 140px;
-  background-color: #0B1332;
-}
-
 /* Echo the warm CTA accent in small recurring navbar details */
 #search_toggle:hover,
 .theme-toggle-wrap:hover,
