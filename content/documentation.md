@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <p style="text-align:justify;">
-This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#8209;flow consistent, agent&#8211;based integrated assessment model developed at the Institute of Economics of the Scuola Superiore Sant'Anna. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module, drawing on the full model description published in Reissl, Fierro, Lamperti &amp; Roventini (2025), <em>"The DSK stock&#8211;flow consistent agent&#8211;based integrated assessment model"</em>, Ecological Economics.
+This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#8209;flow consistent, agent&#8211;based integrated assessment model developed at the Institute of Economics of the Scuola Superiore Sant'Anna. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module. A full model description can be found at Reissl, Fierro, Lamperti &amp; Roventini (2025), <em>"The DSK stock&#8211;flow consistent agent&#8211;based integrated assessment model"</em>, Ecological Economics.
 </p>
 
 <div class="doc-layout">
