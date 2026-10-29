@@ -15,12 +15,15 @@ main:
   - name: The Model
     url: model/
     weight: 3
+  - name: Documentation
+    url: documentation/
+    weight: 4
   - name: Publications
     url: publications/
-    weight: 3
+    weight: 5
   - name: Get Access
-    url: access/  
-    weight: 4
+    url: access/
+    weight: 6
  # - parent: Resources
  #   name: Blog
  #   url: blog/
