@@ -165,30 +165,51 @@ full_width: true
   color:#4b5563;
   margin:0 0 1rem 0;
 }
-.doc-flows{
+.doc-flow-groups{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-  gap:1rem 1.5rem;
-  margin:0 0 1rem 0;
-  padding:0;
-  list-style:none;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1.25rem;
+  margin:0 0 1.2rem 0;
 }
-.doc-flows li{
-  display:flex;
-  flex-direction:column;
-  gap:.15rem;
-  padding:.6rem .8rem;
+.doc-flow-group{
   background:#F3F4F6;
-  border-radius:8px;
+  border-radius:10px;
+  padding:1.2rem 1.3rem;
+}
+.doc-flow-group h4{
+  margin:0 0 .9rem 0;
+  font-size:.82rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  color:#6b7280;
+}
+.doc-flow-group ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.doc-flow-group li{
+  margin:0 0 .9rem 0;
+}
+.doc-flow-group li:last-child{
+  margin-bottom:0;
 }
 .doc-flow-label{
-  font-size:.88rem;
+  display:block;
+  font-size:.92rem;
   font-weight:700;
   color:#142E94;
 }
 .doc-flow-desc{
+  display:block;
   font-size:.88rem;
   color:#4b5563;
+}
+@media (max-width: 900px){
+  .doc-flow-groups{
+    grid-template-columns:1fr;
+  }
 }
 .doc-source{
   margin-top:3rem;
@@ -252,7 +273,7 @@ html.dark .doc-note{
   background:#17181c;
   color:#9ca3af;
 }
-html.dark .doc-flows li{
+html.dark .doc-flow-group{
   background:#17181c;
 }
 html.dark .doc-flow-label{
@@ -344,9 +365,6 @@ Unlike conventional, equilibrium&#8211;based integrated assessment models, DSK&#
 <p>
 The model economy consists of nine types of agents / sectors: a household sector, heterogeneous capital&#8211;good firms, heterogeneous consumption&#8211;good firms, a heterogeneous banking sector, a government, a central bank, an energy sector, a fossil fuel sector, and a climate module. The rest of this page walks through each of these building blocks, the accounting structure that ties them together, and the climate shock channels through which physical and transition risks feed back into the economy.
 </p>
-<div class="doc-note">
-Each section below includes the model's key equations, in the notation of the source paper (a handful of unusual Fraktur/script symbols have been replaced with more legible Greek/Latin letters). This page covers the core mechanisms; it omits the full parameter tables, the balance&#8211;sheet/transaction&#8211;flow matrices, the worked simulation experiments, and the complete derivations &mdash; all given in full in the paper linked at the end of this page.
-</div>
 </section>
 
 <section id="structure">
@@ -355,19 +373,34 @@ Each section below includes the model's key equations, in the notation of the so
 Capital&#8211;good firms (K&#8211;Firms) sell heterogeneous capital goods to consumption&#8211;good firms (C&#8211;Firms), which combine capital, labour and energy to produce a homogeneous consumption good purchased by households. Firms finance production and investment out of retained earnings and, for C&#8211;Firms, bank loans. Households supply labour, consume, and hold their savings as bank deposits. The government levies taxes and pays unemployment benefits (and, where activated, a carbon tax), while the central bank sets the policy rate and supplies the reserves needed to settle interbank payments. An energy sector supplies both firm sectors with green or brown energy, purchasing fossil fuel inputs from a dedicated fossil fuel sector when brown generation is used. A climate module translates the economy's cumulative emissions into a global temperature anomaly, which in turn determines the size and frequency of climate damage shocks fed back into the real economy.
 </p>
 <p>The main flows connecting sectors are:</p>
-<ul class="doc-flows">
+<div class="doc-flow-groups">
+<div class="doc-flow-group">
+<h4>Climate &amp; resources</h4>
+<ul>
 <li><span class="doc-flow-label">Emissions</span><span class="doc-flow-desc">firms &amp; energy sector &rarr; climate</span></li>
 <li><span class="doc-flow-label">Climate shocks</span><span class="doc-flow-desc">climate &rarr; firms, energy, households</span></li>
+<li><span class="doc-flow-label">Energy</span><span class="doc-flow-desc">energy sector &rarr; K&#8211;Firms &amp; C&#8211;Firms</span></li>
+<li><span class="doc-flow-label">Fossil fuels</span><span class="doc-flow-desc">fossil fuel sector &rarr; energy sector</span></li>
+</ul>
+</div>
+<div class="doc-flow-group">
+<h4>Goods &amp; labour</h4>
+<ul>
 <li><span class="doc-flow-label">Labour</span><span class="doc-flow-desc">households &rarr; firms &amp; energy sector</span></li>
 <li><span class="doc-flow-label">Consumption goods</span><span class="doc-flow-desc">C&#8211;Firms &rarr; households</span></li>
 <li><span class="doc-flow-label">Capital goods</span><span class="doc-flow-desc">K&#8211;Firms &rarr; C&#8211;Firms</span></li>
-<li><span class="doc-flow-label">Energy</span><span class="doc-flow-desc">energy sector &rarr; K&#8211;Firms &amp; C&#8211;Firms</span></li>
-<li><span class="doc-flow-label">Fossil fuels</span><span class="doc-flow-desc">fossil fuel sector &rarr; energy sector</span></li>
+</ul>
+</div>
+<div class="doc-flow-group">
+<h4>Financial flows</h4>
+<ul>
 <li><span class="doc-flow-label">Deposits</span><span class="doc-flow-desc">all sectors &harr; banks</span></li>
 <li><span class="doc-flow-label">Loans</span><span class="doc-flow-desc">banks &rarr; C&#8211;Firms</span></li>
 <li><span class="doc-flow-label">Bonds</span><span class="doc-flow-desc">government &harr; banks &amp; central bank</span></li>
 <li><span class="doc-flow-label">Reserves &amp; advances</span><span class="doc-flow-desc">central bank &harr; banks</span></li>
 </ul>
+</div>
+</div>
 <p>
 Within every simulated period, events unfold in a fixed sequence so that agents always act on information that is actually available to them (e.g. the current wage is known when prices are set, but the current energy price is not). At quarterly frequency the climate module is called once every four periods. The full sequence is:
 </p>
