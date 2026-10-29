@@ -309,10 +309,6 @@ document.addEventListener("DOMContentLoaded", function() {
 This page provides a detailed description of the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#8209;flow consistent, agent&#8211;based integrated assessment model &mdash; meant to be a guide for DSK users. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module. A full model description is available <a href="https://www.sciencedirect.com/science/article/pii/S0921800925001247">here</a>.
 </p>
 
-<p style="text-align:justify;">
-This documentation is organised into sections covering, in turn: the model's structure and sequence of events (2); households (3); capital&#8211; and consumption&#8211;good firms (4&#8211;5); firm exit and entry (6); banks, government and the central bank (7&#8211;9); the energy and fossil&#8211;fuel sectors (10&#8211;11); the climate module (12); and aggregation, calibration and validation (13&#8211;14).
-</p>
-
 <div class="doc-layout">
 
 <nav class="doc-toc">
