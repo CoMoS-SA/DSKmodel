@@ -24,6 +24,10 @@ full_width: true
   border-radius:12px;
   padding:1.25rem 1.1rem;
   font-size:.92rem;
+  text-align:left !important;
+}
+.doc-toc *{
+  text-align:left !important;
 }
 .doc-toc .doc-toc-title{
   font-weight:700;
@@ -38,8 +42,17 @@ full_width: true
   margin:0;
   padding:0;
 }
+.doc-toc > ul{
+  counter-reset: toc-sec;
+}
 .doc-toc > ul > li{
   margin-bottom:.15rem;
+  counter-increment: toc-sec;
+}
+.doc-toc > ul > li > a::before{
+  content: counter(toc-sec) ". ";
+  color:#142E94;
+  font-weight:700;
 }
 .doc-toc a{
   display:block;
@@ -59,12 +72,21 @@ full_width: true
 .doc-toc ul ul{
   margin:.1rem 0 .4rem .65rem;
   border-left:2px solid #e5e7eb;
+  counter-reset: toc-subsec;
+}
+.doc-toc ul ul li{
+  counter-increment: toc-subsec;
 }
 .doc-toc ul ul a{
   font-weight:400;
   font-size:.88rem;
   color:#4b5563;
   padding:.22rem .5rem;
+}
+.doc-toc ul ul a::before{
+  content: counter(toc-sec) "." counter(toc-subsec) " ";
+  color:#6b7280;
+  font-weight:600;
 }
 
 /* Content column */
@@ -76,9 +98,14 @@ full_width: true
   border-radius:12px;
   padding:2rem 2.5rem;
 }
+.doc-content{
+  counter-reset: doc-sec;
+}
 .doc-content section{
   margin-bottom:2.75rem;
   scroll-margin-top:90px;
+  counter-increment: doc-sec;
+  counter-reset: doc-subsec;
 }
 .doc-content section:last-child{
   margin-bottom:0;
@@ -91,12 +118,19 @@ full_width: true
   border-bottom:2px solid #E9ECF7;
   color:#0F1E57;
 }
+.doc-content h2::before{
+  content: counter(doc-sec) ". ";
+}
 .doc-content h3{
   font-size:1.2rem;
   font-weight:700;
   margin:1.75rem 0 .6rem 0;
   color:#142E94;
   scroll-margin-top:90px;
+  counter-increment: doc-subsec;
+}
+.doc-content h3::before{
+  content: counter(doc-sec) "." counter(doc-subsec) " ";
 }
 .doc-content p{
   margin:0 0 1rem 0;
@@ -133,18 +167,27 @@ full_width: true
 .doc-flows{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-  gap:.5rem 1.5rem;
+  gap:1rem 1.5rem;
   margin:0 0 1rem 0;
   padding:0;
   list-style:none;
 }
 .doc-flows li{
-  font-size:.92rem;
-  color:#374151;
-  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:.15rem;
+  padding:.6rem .8rem;
+  background:#F3F4F6;
+  border-radius:8px;
 }
-.doc-flows b{
+.doc-flow-label{
+  font-size:.88rem;
+  font-weight:700;
   color:#142E94;
+}
+.doc-flow-desc{
+  font-size:.88rem;
+  color:#4b5563;
 }
 .doc-source{
   margin-top:3rem;
@@ -208,8 +251,14 @@ html.dark .doc-note{
   background:#17181c;
   color:#9ca3af;
 }
-html.dark .doc-flows b{
+html.dark .doc-flows li{
+  background:#17181c;
+}
+html.dark .doc-flow-label{
   color:#A0AFE9;
+}
+html.dark .doc-flow-desc{
+  color:#9ca3af;
 }
 html.dark .doc-source{
   border-top-color:#3f3f46;
@@ -218,7 +267,7 @@ html.dark .doc-source{
 </style>
 
 <p style="text-align:justify;">
-This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#8209;flow consistent, agent&#8211;based integrated assessment model developed at the Institute of Economics of the Scuola Superiore Sant'Anna. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module, drawing on the full model description published in Reissl, Fierro, Lamperti &amp; Roventini (2024), <em>"The DSK&#8209;SFC stock&#8211;flow consistent agent&#8211;based integrated assessment model"</em>, LEM Working Paper 2024/09.
+This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#8209;flow consistent, agent&#8211;based integrated assessment model developed at the Institute of Economics of the Scuola Superiore Sant'Anna. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module, drawing on the full model description published in Reissl, Fierro, Lamperti &amp; Roventini (2025), <em>"The DSK stock&#8211;flow consistent agent&#8211;based integrated assessment model"</em>, Ecological Economics.
 </p>
 
 <div class="doc-layout">
@@ -229,7 +278,7 @@ This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#
 <li><a href="#overview">Overview</a></li>
 <li><a href="#structure">Model structure &amp; sequence of events</a></li>
 <li><a href="#households">Households</a></li>
-<li><a href="#kfirms">Capital good firms (K&#8209;Firms)
+<li><a href="#kfirms">Capital good firms (K&#8209;Firms)</a>
 <ul>
 <li><a href="#kfirms-production">Production &amp; labour demand</a></li>
 <li><a href="#kfirms-market">Capital good market dynamics</a></li>
@@ -237,7 +286,7 @@ This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#
 <li><a href="#kfirms-profits">Profits, dividends &amp; exit</a></li>
 </ul>
 </li>
-<li><a href="#cfirms">Consumption good firms (C&#8209;Firms)
+<li><a href="#cfirms">Consumption good firms (C&#8209;Firms)</a>
 <ul>
 <li><a href="#cfirms-production">Desired production &amp; investment</a></li>
 <li><a href="#cfirms-pricing">Pricing &amp; production cost</a></li>
@@ -252,7 +301,7 @@ This page documents the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#
 <li><a href="#centralbank">Central bank</a></li>
 <li><a href="#energy">Energy sector</a></li>
 <li><a href="#fossil">Fossil fuel sector</a></li>
-<li><a href="#climate">Climate
+<li><a href="#climate">Climate</a>
 <ul>
 <li><a href="#climate-modules">The two climate modules</a></li>
 <li><a href="#climate-shocks">Climate impact shocks</a></li>
@@ -286,17 +335,17 @@ Capital&#8211;good firms (K&#8211;Firms) sell heterogeneous capital goods to con
 </p>
 <p>The main flows connecting sectors are:</p>
 <ul class="doc-flows">
-<li><b>Emissions</b> &mdash; firms &amp; energy sector &rarr; climate</li>
-<li><b>Climate shocks</b> &mdash; climate &rarr; firms, energy, households</li>
-<li><b>Labour</b> &mdash; households &rarr; firms &amp; energy sector</li>
-<li><b>Consumption goods</b> &mdash; C&#8211;Firms &rarr; households</li>
-<li><b>Capital goods</b> &mdash; K&#8211;Firms &rarr; C&#8211;Firms</li>
-<li><b>Energy</b> &mdash; energy sector &rarr; K&#8211;Firms &amp; C&#8211;Firms</li>
-<li><b>Fossil fuels</b> &mdash; fossil fuel sector &rarr; energy sector</li>
-<li><b>Deposits</b> &mdash; all sectors &harr; banks</li>
-<li><b>Loans</b> &mdash; banks &rarr; C&#8211;Firms</li>
-<li><b>Bonds</b> &mdash; government &harr; banks &amp; central bank</li>
-<li><b>Reserves &amp; advances</b> &mdash; central bank &harr; banks</li>
+<li><span class="doc-flow-label">Emissions</span><span class="doc-flow-desc">firms &amp; energy sector &rarr; climate</span></li>
+<li><span class="doc-flow-label">Climate shocks</span><span class="doc-flow-desc">climate &rarr; firms, energy, households</span></li>
+<li><span class="doc-flow-label">Labour</span><span class="doc-flow-desc">households &rarr; firms &amp; energy sector</span></li>
+<li><span class="doc-flow-label">Consumption goods</span><span class="doc-flow-desc">C&#8211;Firms &rarr; households</span></li>
+<li><span class="doc-flow-label">Capital goods</span><span class="doc-flow-desc">K&#8211;Firms &rarr; C&#8211;Firms</span></li>
+<li><span class="doc-flow-label">Energy</span><span class="doc-flow-desc">energy sector &rarr; K&#8211;Firms &amp; C&#8211;Firms</span></li>
+<li><span class="doc-flow-label">Fossil fuels</span><span class="doc-flow-desc">fossil fuel sector &rarr; energy sector</span></li>
+<li><span class="doc-flow-label">Deposits</span><span class="doc-flow-desc">all sectors &harr; banks</span></li>
+<li><span class="doc-flow-label">Loans</span><span class="doc-flow-desc">banks &rarr; C&#8211;Firms</span></li>
+<li><span class="doc-flow-label">Bonds</span><span class="doc-flow-desc">government &harr; banks &amp; central bank</span></li>
+<li><span class="doc-flow-label">Reserves &amp; advances</span><span class="doc-flow-desc">central bank &harr; banks</span></li>
 </ul>
 <p>
 Within every simulated period, events unfold in a fixed sequence so that agents always act on information that is actually available to them (e.g. the current wage is known when prices are set, but the current energy price is not). At quarterly frequency the climate module is called once every four periods. The full sequence is:
@@ -516,10 +565,10 @@ Under this calibration, the baseline model reproduces a wide set of qualitative 
 <section id="further">
 <h2>Further reading</h2>
 <p>
-This page summarises the model; the full mathematical specification &mdash; every equation, parameter and initial value, together with the complete sequence of events, the full set of climate shock specifications, and the initialisation procedure &mdash; is given in Reissl, Fierro, Lamperti &amp; Roventini (2024). Earlier DSK model papers describing specific applications (climate&#8211;induced financial instability, green financial policy, decarbonisation and employment, and more) are listed on the <a href="/DSKmodel/publications/">Publications</a> page, and the model source code is available on <a href="/DSKmodel/access/">GitHub</a>.
+This page summarises the model; the full mathematical specification &mdash; every equation, parameter and initial value, together with the complete sequence of events, the full set of climate shock specifications, and the initialisation procedure &mdash; is given in Reissl, Fierro, Lamperti &amp; Roventini (2025). Earlier DSK model papers describing specific applications (climate&#8211;induced financial instability, green financial policy, decarbonisation and employment, and more) are listed on the <a href="/DSKmodel/publications/">Publications</a> page, and the model source code is available on <a href="/DSKmodel/access/">GitHub</a>.
 </p>
 <div class="doc-source">
-Reissl, S., Fierro, L.E., Lamperti, F., Roventini, A. (2024). <em>The DSK&#8211;SFC stock&#8211;flow consistent agent&#8211;based integrated assessment model.</em> LEM Working Paper Series, 2024/09, Institute of Economics, Scuola Superiore Sant'Anna. ISSN(ONLINE) 2284&#8211;0400.
+Reissl, S., Fierro, L.E., Lamperti, F., Roventini, A. (2025). <em>The DSK stock&#8211;flow consistent agent&#8211;based integrated assessment model.</em> Ecological Economics. <a href="https://www.sciencedirect.com/science/article/pii/S0921800925001247">sciencedirect.com/science/article/pii/S0921800925001247</a>
 </div>
 </section>
 
