@@ -15,10 +15,10 @@ appearance:
 # SEO
 marketing:
   seo:
-    site_type: Person
+    site_type: Organization
     local_business_type: ''
     org_name: ''
-    description: 'DSK model website'
+    description: 'DSK: an open-source, agent-based integrated assessment model (Dystopian Schumpeter meeting Keynes) for climate-economy dynamics, developed at Scuola Superiore Sant''Anna.'
     twitter: 'DSKmodel'
   analytics:
     google_analytics: ''
