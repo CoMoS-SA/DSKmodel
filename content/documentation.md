@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <p style="text-align:justify;">
-This page provides a detailed description of the <strong>DSK&#8209;SFC</strong> model &mdash; the stock&#8209;flow consistent, agent&#8211;based integrated assessment model &mdash; meant to be a guide for DSK users. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module. A full model description is available <a href="https://www.sciencedirect.com/science/article/pii/S0921800925001247">here</a>.
+This page provides a detailed description of the <strong>DSK&</strong> model. It summarises the model's structure, the behavioural rules of each class of agent, its accounting framework and its climate module. A full model description is available <a href="https://www.sciencedirect.com/science/article/pii/S0921800925001247">here</a>.
 </p>
 
 <div class="doc-layout">
